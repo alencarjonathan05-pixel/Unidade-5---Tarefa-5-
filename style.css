@@ -1,0 +1,57 @@
+:root {
+	--cor-principal: blue;
+	--cor-secundaria: black;
+	--fonte-principal: Century Gothic;
+	--tamanho-titulo: 24px;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+	font-family: var(--fonte-principal);
+}
+
+header { 
+	border: 1px solid var(--cor-principal);
+	padding: 20px;
+	margin: 10px;
+	
+}
+
+section {
+	border: 1px solid var(--cor-principal);
+	padding: 15px;
+	margin: 10px;
+}
+
+article {
+	border: 1px solid var(--cor-principal);
+	padding: 15px;
+	margin: 10px;
+}
+
+h1 {
+	color: var(--cor-secundaria);
+	font-size: var(--tamanho-titulo);
+
+}
+
+p {
+	color: var(--cor-secundaria);
+}
+
+#menu {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+#menu:checked ~ nav {
+    display: block;
+}
+#menu:checked + label {
+	display: none;
+}
+
